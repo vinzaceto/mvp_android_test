@@ -15,9 +15,27 @@ android {
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            minifyEnabled false
+            buildConfigField 'String', 'BASE_URL', '"http://www.google.it"'
+
+
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField 'String', 'BASE_URL', '"http://www.google2.it"'
+
+        }
+    }
+
+    flavorDimensions "default"
+    productFlavors {
+        svil {
+
+        }
+        prod {
+
         }
     }
 }
