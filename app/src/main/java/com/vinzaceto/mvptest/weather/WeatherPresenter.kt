@@ -1,11 +1,11 @@
 package com.vinzaceto.mvptest.weather
 
-class WeatherPresenter (var iView: WeatherMVP.View?) : WeatherMVP.ViewPresenter, WeatherMVP.ModelPresenter {
+class WeatherPresenter (var iView: WeatherMVP.View) : WeatherMVP.ViewPresenter, WeatherMVP.ModelPresenter {
     var interactor: WeatherInteractor = WeatherInteractor()
 
     fun getWeatherData()
     {
-        iView?.showLoader()
+        iView.showLoader()
         requestDataFromServer()
     }
 
@@ -18,11 +18,11 @@ class WeatherPresenter (var iView: WeatherMVP.View?) : WeatherMVP.ViewPresenter,
     }
 
     override fun onFinished(data: String) {
-        iView?.hideLoader()
-        iView?.setWeatherData(data)
+        iView.hideLoader()
+        iView.setWeatherData(data)
     }
 
     override fun onError(t: Throwable) {
-        iView?.hideLoader()
+        iView.hideLoader()
     }
 }
