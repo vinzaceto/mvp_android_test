@@ -2,7 +2,7 @@ package com.vinzaceto.mvptest.weather
 
 import android.util.Log
 
-class WeatherPresenter (var iView: WeatherMVP.View?) : WeatherMVP.ViewPresenter, WeatherMVP.ModelPresenter {
+class WeatherPresenter (var iView: WeatherMVP.View) : WeatherMVP.ViewPresenter, WeatherMVP.ModelPresenter {
     var interactor: WeatherInteractor = WeatherInteractor()
 
     fun getWeatherData()
