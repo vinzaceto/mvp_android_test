@@ -9,7 +9,7 @@ import kotlinx.android.synthetic.main.activity_weather.*
 
 class WeatherActivity : AppCompatActivity(), WeatherMVP.View {
 
-    lateinit var presenter : WeatherMVP.ViewPresenter
+    private lateinit var presenter : WeatherMVP.ViewPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

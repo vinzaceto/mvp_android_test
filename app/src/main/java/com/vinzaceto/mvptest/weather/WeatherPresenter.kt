@@ -1,5 +1,7 @@
 package com.vinzaceto.mvptest.weather
 
+import android.util.Log
+
 class WeatherPresenter (var iView: WeatherMVP.View?) : WeatherMVP.ViewPresenter, WeatherMVP.ModelPresenter {
     var interactor: WeatherInteractor = WeatherInteractor()
 
@@ -18,8 +20,9 @@ class WeatherPresenter (var iView: WeatherMVP.View?) : WeatherMVP.ViewPresenter,
     }
 
     override fun onFinished(data: String) {
-        iView?.hideLoader()
-        iView?.setWeatherData(data)
+        Log.d("TEST", "DATA from Server: $data")
+        //iView?.hideLoader()
+        //iView?.setWeatherData(data)
     }
 
     override fun onError(t: Throwable) {
