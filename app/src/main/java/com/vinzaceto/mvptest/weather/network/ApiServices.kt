@@ -1,5 +1,6 @@
 package com.vinzaceto.mvptest.weather.network
 
+import io.reactivex.Observable
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
@@ -13,5 +14,5 @@ import retrofit2.http.Query
  */
 interface ApiServices {
     @GET("weather")
-    fun getWeatherForCity(@Query("APPID") apiKey : String, @Query("q") city: String) : Call<WeatherCity>
+    fun getWeatherForCity(@Query("APPID") apiKey : String, @Query("q") city: String) : Observable<WeatherCity>
 }

@@ -20,7 +20,7 @@ class WeatherPresenter (var iView: WeatherMVP.View) : WeatherMVP.ViewPresenter, 
     }
 
     override fun onFinished(data: String) {
-        Log.d("TEST", "DATA from Server: $data")
+        Log.d("TEST", ">>>>>>>>>>>>>>>>>>>>>>>> SERVICE RESULT: $data")
         //iView?.hideLoader()
         //iView?.setWeatherData(data)
     }
