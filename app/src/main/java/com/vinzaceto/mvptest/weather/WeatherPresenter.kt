@@ -7,7 +7,7 @@ class WeatherPresenter (var iView: WeatherMVP.View?) : WeatherMVP.ViewPresenter,
 
     fun getWeatherData()
     {
-        iView?.showLoader()
+        iView.showLoader()
         requestDataFromServer()
     }
 
@@ -26,6 +26,6 @@ class WeatherPresenter (var iView: WeatherMVP.View?) : WeatherMVP.ViewPresenter,
     }
 
     override fun onError(t: Throwable) {
-        iView?.hideLoader()
+        iView.hideLoader()
     }
 }
