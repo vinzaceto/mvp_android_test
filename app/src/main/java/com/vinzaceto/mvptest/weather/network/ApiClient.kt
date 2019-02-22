@@ -2,6 +2,7 @@ package com.vinzaceto.mvptest.weather.network
 
 import com.vinzaceto.mvptest.BuildConfig
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 /**
@@ -17,8 +18,9 @@ class ApiClient {
         fun create(): ApiServices {
 
             val retrofit = Retrofit.Builder()
-                .addConverterFactory(GsonConverterFactory.create())
                 .baseUrl(BuildConfig.BASE_URL)
+                .addConverterFactory(GsonConverterFactory.create())
+                .addCallAdapterFactory(RxJava2CallAdapterFactory.create())
                 .build()
 
             return retrofit.create(ApiServices::class.java)
