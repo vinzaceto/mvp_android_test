@@ -1,36 +1,46 @@
 package com.vinzaceto.mvptest.weather
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity;
-import android.view.View
+import com.vinzaceto.mvptest.BaseActivity
 import com.vinzaceto.mvptest.R
 
 import kotlinx.android.synthetic.main.activity_weather.*
+import kotlinx.android.synthetic.main.content_weather.*
 
-class WeatherActivity : AppCompatActivity(), WeatherMVP.View {
+class WeatherActivity : BaseActivity(), WeatherMVP.View {
+
 
     private lateinit var presenter : WeatherMVP.ViewPresenter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        initConfig()
+        initView()
+    }
+
+    override fun initView() {
         setContentView(R.layout.activity_weather)
         setSupportActionBar(toolbar)
 
-        presenter = WeatherPresenter(this)
+        setLoaderView()
 
-        fab.setOnClickListener(View.OnClickListener { presenter.requestDataFromServer() })
+        fab.setOnClickListener {
+            super.showLoader()
+            presenter.requestDataFromServer()
+        }
+
+    }
+
+    override fun initConfig() {
+        presenter = WeatherPresenter(this)
+    }
+
+    override fun setLoaderView() {
+        loaderView = loader
     }
 
     override fun setWeatherData(data: String) {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun showLoader() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
-    }
-
-    override fun hideLoader() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        textView2.text = data
     }
 
 }
