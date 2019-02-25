@@ -1,6 +1,4 @@
-package com.vinzaceto.mvptest.weather
-
-import android.util.Log
+package com.nttdata.pfmWhiteLabel.weather
 
 class WeatherPresenter (var iView: WeatherMVP.View) : WeatherMVP.ViewPresenter, WeatherMVP.ModelPresenter {
     var interactor: WeatherInteractor = WeatherInteractor()

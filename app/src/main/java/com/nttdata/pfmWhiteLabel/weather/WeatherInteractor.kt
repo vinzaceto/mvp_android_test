@@ -1,14 +1,12 @@
-package com.vinzaceto.mvptest.weather
+package com.nttdata.pfmWhiteLabel.weather
 
-import android.util.Log
-import com.vinzaceto.mvptest.BuildConfig
-import com.vinzaceto.mvptest.weather.network.ApiClient
-import com.vinzaceto.mvptest.weather.network.WeatherCity
+import com.nttdata.pfmWhiteLabel.BuildConfig
+import com.nttdata.pfmWhiteLabel.weather.network.ApiClient
+import com.nttdata.pfmWhiteLabel.weather.network.WeatherCity
 import io.reactivex.Observable
 import io.reactivex.Observer
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.Disposable
-import io.reactivex.functions.Consumer
 import io.reactivex.schedulers.Schedulers
 
 

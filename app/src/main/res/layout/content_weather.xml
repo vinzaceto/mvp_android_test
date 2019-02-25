@@ -25,7 +25,7 @@
             android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
 
 
-    <com.vinzaceto.mvptest.weather.utils.LoaderView
+    <com.nttdata.pfmWhiteLabel.weather.utils.LoaderView
             android:id="@+id/loader"
             android:layout_width="match_parent"
                                                     android:layout_height="match_parent"

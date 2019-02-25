@@ -1,4 +1,4 @@
-package com.vinzaceto.mvptest
+package com.nttdata.pfmWhiteLabel
 
 import androidx.test.InstrumentationRegistry
 import androidx.test.runner.AndroidJUnit4

@@ -1,9 +1,9 @@
-package com.vinzaceto.mvptest
+package com.nttdata.pfmWhiteLabel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import com.vinzaceto.mvptest.weather.utils.LoaderView
+import com.nttdata.pfmWhiteLabel.weather.utils.LoaderView
 
 abstract class BaseActivity : AppCompatActivity() {
 

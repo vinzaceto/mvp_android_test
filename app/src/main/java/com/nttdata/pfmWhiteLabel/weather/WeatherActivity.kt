@@ -1,8 +1,8 @@
-package com.vinzaceto.mvptest.weather
+package com.nttdata.pfmWhiteLabel.weather
 
 import android.os.Bundle
-import com.vinzaceto.mvptest.BaseActivity
-import com.vinzaceto.mvptest.R
+import com.nttdata.pfmWhiteLabel.BaseActivity
+import com.nttdata.pfmWhiteLabel.R
 
 import kotlinx.android.synthetic.main.activity_weather.*
 import kotlinx.android.synthetic.main.content_weather.*

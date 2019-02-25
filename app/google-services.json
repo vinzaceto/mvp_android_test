@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1048545365055",
+    "firebase_url": "https://pmf-wl.firebaseio.com",
+    "project_id": "pmf-wl",
+    "storage_bucket": "pmf-wl.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1048545365055:android:eb471ca6a48aa193",
+        "android_client_info": {
+          "package_name": "it.nttdata.pfmWhiteLabel"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1048545365055-9omiv764jvtj8su21i3ous2ip2v9saa4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3Qr8I2wTd9XCg7X-M4Q8Ts9jRUlrRtyk"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

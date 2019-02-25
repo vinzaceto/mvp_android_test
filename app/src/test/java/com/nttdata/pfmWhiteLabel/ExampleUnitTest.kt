@@ -1,4 +1,4 @@
-package com.vinzaceto.mvptest
+package com.nttdata.pfmWhiteLabel
 
 import org.junit.Test
 

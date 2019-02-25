@@ -1,4 +1,4 @@
-package com.vinzaceto.mvptest.weather
+package com.nttdata.pfmWhiteLabel.weather
 
 class WeatherObject {
     lateinit var field1: String
